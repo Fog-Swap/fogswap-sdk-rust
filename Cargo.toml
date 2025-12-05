@@ -1,0 +1,21 @@
+[package]
+name = "fogswap-sdk-rust"
+version = "0.1.0"
+edition = "2024"
+authors = ["FogSwap <company@fogswap.com>"]
+description = "FogSwap SDK for Rust"
+license = "Apache-2.0" 
+repository = "https://github.com/FogSwap/fogswap-sdk-rust"
+homepage = "https://www.fogswap.com" 
+readme = "README.md" 
+categories = ["cryptography", "api-bindings"]
+keywords = ["fogswap", "dex", "blockchain", "privacy", "cross-chain"] 
+
+[dependencies]
+tokio = { version = "1.43.0", features = ["full"] }
+serde = { version = "1.0.159", features = ["derive"] }
+serde_derive = "1.0.216"
+serde_json = "1.0"
+reqwest = { version = "0.12.12", features = ["json", "stream","rustls-tls"],default-features = false }
+anyhow = "1.0.96"
+thiserror = "2.0.11"
